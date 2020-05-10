@@ -1,0 +1,164 @@
+$mobileView: "only screen and (max-width : 800px)";
+
+.App {
+    width: 95%;
+    display: block;
+    margin: auto;
+    padding: 80px 0;
+
+    @media #{$mobileView} {
+      padding: 20px 0;
+    }
+
+    .set {
+        width: 600px;
+        height: 50px;
+        border-radius: 6px;
+        text-align: center;
+        margin: 0 auto 80px;
+        display: flex;
+
+        @media #{$mobileView} {
+          width: 96%;
+          margin: 0 auto 40px;
+        }
+
+        .base {
+            position: relative;
+            // display: inline-block;
+
+            button {
+                background-color: rgb(76, 175, 79);
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                width: 200px;
+                border-radius: 6px;
+                outline: none;
+                
+                @media #{$mobileView} {
+                  width: 100px;
+                }
+            }
+
+            ul {
+                margin: 0;
+                padding: 0;
+                // display: none;
+                // position: absolute;
+                background-color: #f9f9f9;
+                width: 200px;
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                // z-index: 1;
+
+                // &:hover {
+                // border-bottom-left-radius: 6px;
+                // border-bottom-right-radius: 6px;
+                // }
+
+                
+                @media #{$mobileView} {
+                  width: 100px;
+                }
+
+                li {
+                    text-decoration: none;
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    cursor: pointer;
+                    &:last-child {
+                        border-bottom-left-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                    }
+                    &:hover {
+                        background-color: #f1f1f1;
+                    }
+                }
+            }
+            &:hover {
+                button {
+                    background-color: #3e8e41;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                // ul {
+                //   display: block;
+                // }
+            }
+        }
+
+        input {
+            width: 400px;
+            display: block;
+            margin-left: 20px;
+            height: 100%;
+            padding: 0;
+            border: none;
+            border-radius: 6px;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+            background-color: #ddd;
+            font-size: 18px;
+            text-align: center;
+            outline: none;
+            
+            @media #{$mobileView} {
+              width: 100%;
+              font-size: 18px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: #fff;
+            }
+            &:focus {
+                background-color: #fff;
+            }
+        }
+        &:hover ul {
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+    }
+    ul {
+        padding-left: 0;
+        .panel {
+            text-decoration: none;
+            height: 50px;
+            // margin: 30px 0;
+            border-radius: 6px;
+            box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+            text-align: center;
+            display: flex;
+            width: 46%;
+            margin: 25px 2%;
+            float: left;
+
+            @media #{$mobileView} {
+              width: 96%;
+              margin: 0 2% 20px;
+            }
+
+            .rate {
+                width: 100px;
+                height: 100%;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                background-color: #333;
+                line-height: 50px;
+                color: #bbb;
+            }
+
+            .result {
+                height: 40px;
+                flex-grow: 1;
+                line-height: 50px;
+                color: #999;
+            }
+        }
+    }
+}
