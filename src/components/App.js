@@ -44,7 +44,7 @@ class App extends React.Component {
     }
 
     componentDidMount() {
-        fetch('http://api.nbp.pl/api/exchangerates/tables/C/').then(response => {
+        fetch('https://api.nbp.pl/api/exchangerates/tables/C/').then(response => {
             if (response.ok) {
                 return response
             }
