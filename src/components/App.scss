@@ -4,7 +4,7 @@ $mobileView: "only screen and (max-width : 800px)";
     width: 95%;
     display: block;
     margin: auto;
-    padding: 80px 0;
+    padding: 70px 0;
 
     @media #{$mobileView} {
       padding: 20px 0;
@@ -44,9 +44,10 @@ $mobileView: "only screen and (max-width : 800px)";
             }
 
             ul {
+
                 margin: 0;
                 padding: 0;
-                // display: none;
+                display: none;
                 // position: absolute;
                 background-color: #f9f9f9;
                 width: 200px;
