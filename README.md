@@ -11,7 +11,7 @@ Link: https://mateusz-skiba.github.io/currencyExchange/
 
 ## Features
 * Choice base currency and amount
-* Counted amount to 10 popular currencies with actually rate downloaded by React "fetch()" method.
+* Show converted amount to 10 popular currencies with actually rate downloaded by React "fetch()" method.
 
 ## Contact
 
